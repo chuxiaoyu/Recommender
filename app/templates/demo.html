@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Movie Recommendation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+		.body {
+			 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/static/movie.jpeg');
+			 background-size: cover;
+			 background-repeat:no-repeat;
+			 /*filter: brightness(25%);*/
+			 height: 100vh
+
+			}
+			h1{
+				font-size:50px;
+				text-align: center;
+			}
+			h2{
+				font-size:36px;
+				text-align: center;
+			}
+	</style>
+</head>
+<body>
+    <div class="container col-12 body">
+		<br>
+		<h1 class="text-white mx-auto">Movie Recommendation</h1>
+	<div class="col-4 mx-auto">
+    <form method="POST">
+
+	<div class="form-group">
+		<label for="Age1" class="text-white">Please enter the user_id:</label>
+		<input type="number" class="form-control" name="user_id" id="Age1" placeholder={{ user_id }} required>
+	</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+    </form>
+	</div>
+		<body>
+		<h2 class="text-white mx-auto">{{sentence}}</h2>
+		<h3 align="center">
+             <p class="text-white small ">{{sentence1}}</p>
+			 <p class="text-white small ">{{sentence2}}</p>
+			 <p class="text-white small ">{{sentence3}}</p>
+			</h3>
+		</body>
+    </div>
+</body>
+</html>

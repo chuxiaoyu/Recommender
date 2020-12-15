@@ -1,0 +1,6 @@
+flask
+Flask
+numpy
+tensorflow
+tensorflow_datasets
+tensorflow_recommenders
